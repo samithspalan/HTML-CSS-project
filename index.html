@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Cake Shop</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cakes">Cakes</a></li>
+        
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Cake Shop</h1>
+      <p>Delicious Cakes for Every Occasion!</p>
+      <a href="#cakes" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Cake Categories (Redirected from "Shop Now" Button) -->
+  <section id="cakes" class="cakes">
+    <button id="button" ><a href="index.html" >Back</a></button>
+    <h1>Our Best Cakes</h1>
+    <div class="cake-grid">
+      <div class="cake-card">
+        <img src="https://images.unsplash.com/photo-1608675850306-95a3edf85980?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Birthday Cake">
+        <h3>Birthday Cake</h3>
+        <p>$25</p>
+        <button class="add-to-cart" data-name="Birthday Cake" data-price="25">Add to Cart</button>
+      </div>
+      <div class="cake-card">
+        <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wedding Cake">
+        <h3>Wedding Cake</h3>
+        <p>$100</p>
+        <button class="add-to-cart" data-name="Wedding Cake" data-price="100">Add to Cart</button>
+      </div>
+      <div class="cake-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzObX1bivf1wvHG_5rBu-su5n_VF5LARgmmw&s" alt="Custom Cake">
+        <h3>Custom Cake</h3>
+        <p>$50</p>
+        <button class="add-to-cart" data-name="Custom Cake" data-price="50">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section (Visible when cakes are added) -->
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .navbar .logo {
+    color: #e20e6a;
+    font-size: 34px;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #f7b731;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('https://img.freepik.com/premium-photo/birthday-cake-with-candles-food-anniversary-concept-cover-banner-backgroundvertical-background_433009-14971.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+    animation: imagechange 8s infinite normal;
+  }
+  @keyframes imagechange{
+    0% {
+      background-image: url('https://img.freepik.com/premium-photo/birthday-cake-with-candles-food-anniversary-concept-cover-banner-backgroundvertical-background_433009-14971.jpg');
+    }
+    25% {
+      background-image: url('https://img.freepik.com/premium-photo/birthday-cake-with-candles-birthday-party_904318-4841.jpg');
+    }
+    50% {
+      background-image: url('https://img.freepik.com/premium-photo/birthday-cake-with-candles-colorful-party-balloons-with-space-text_118124-53164.jpg');
+    }
+    75% {
+      background-image: url('https://img.freepik.com/premium-photo/birthday-cake-with-candles_1141064-597.jpg');
+    }
+    100% {
+      background-image: url('https://img.freepik.com/premium-photo/delicious-birthday-cake-with-candles_433009-2840.jpg?w=360'); /* Return to the first image */
+    }
+  }
+
+  .contact-us {
+    padding: 50px 20px; /* Adjust padding */
+    background-color: #0e0303; /* Change background color */
+    border: 2px solid #c90f0f;
+    color: white; /* Add border */
+    border-radius: 8px; /* Round corners */
+    max-width: 800px; /* Limit width */
+    margin: 20px auto; /* Center on page */
+  }
+
+  .footer{
+    background-color: brown;
+    height: 80px;
+    color: black;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+   
+  }
+
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .btn {
+    padding: 10px 20px;
+    background-color: #f7b731;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .hero-content .btn:hover {
+    background-color: #e1a300;
+  }
+  
+  /* Cake Section */
+  .cakes {
+    padding: 60px;
+    text-align: center;
+    background-color: #333;
+    color: rgb(184, 11, 11);
+  }
+
+  #button{
+     background-color: yellow;
+     color: black;
+     margin-right: 3000px;
+     height: 40px;
+     width: 40px;
+  }
+li{
+  list-style-type: none;
+}
+  /* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center; /* Center the text */
+}
+
+.testimonials h2 {
+  font-size: 28px; /* Heading size */
+  margin-bottom: 20px;
+  color: #333; /* Heading color */
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+}
+
+.testimonial-card {
+  background-color: #fff; /* White background */
+  padding: 20px; /* Inner padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.testimonial-card p {
+  font-style: italic; /* Italicize the testimonial text */
+  color: #555; /* Dark gray color */
+}
+
+.testimonial-card h3 {
+  margin-top: 10px; /* Space above the name */
+  color: #f8b400; /* Name color */
+}
+
+/* Testimonial Form */
+.testimonial-form {
+  max-width: 600px; /* Limit form width */
+  margin: 30px auto; /* Center the form */
+  background-color: #fff; /* Form background */
+  padding: 30px; /* Inner padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.testimonial-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333; /* Label color */
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  width: 100%;
+  padding: 15px; /* Inner padding */
+  margin-bottom: 20px; /* Space below inputs */
+  border: 2px solid #ccc; /* Border for input fields */
+  border-radius: 5px; /* Round corners */
+}
+
+.testimonial-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8b400; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer;
+  font-size: 16px; /* Button font size */
+}
+
+.testimonial-form button:hover {
+  background-color: #ffa500; /* Lighter orange on hover */
+}
+
+#but{
+  background-color: yellow;
+  height: 40px;
+  width: 40px;
+  color: #ccc;
+  margin-right: 200px;
+}
+
+
+  
+  .cake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .cake-card {
+    background-color: hsl(0, 33%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .cake-card img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .cake-card h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+  }
+  
+  .cake-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    padding: 10px;
+    background-color: #f7b731;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e1a300;
+  }
+  
+  /* Cart Section */
+  .cart-section {
+    padding: 60px;
+    text-align: center;
+
+    background-color: #f7f714;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cake-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .navbar .nav-links li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
